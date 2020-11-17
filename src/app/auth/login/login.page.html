@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title color="primary">Inicio</ion-title>
+        <ion-button color="white" slot="start">
+            <ion-back-button color="primary" defaultHref="home"></ion-back-button>
+        </ion-button>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+    <form [formGroup]="form" (submit)="onSubmit()">
+        <ion-item>
+            <ion-label position="floating">Usuario</ion-label>
+            <ion-input type="text" required formControlName="usuario"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input type="password" required formControlName="contrasena"></ion-input>
+        </ion-item>
+        <ion-button type="submit" class="ion-margin-top" expand="block" [disabled]="form.invalid">Iniciar Sesión</ion-button>
+    </form>
+
+</ion-content>

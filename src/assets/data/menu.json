@@ -1,0 +1,22 @@
+[{
+        "icon": "add-circle",
+        "name": "Ingreso de Productos",
+        "redirectTo": "/create"
+    },
+    {
+        "icon": "person-add",
+        "name": "Ingreso de Proveedores",
+        "redirectTo": "/ingreso_proveedores"
+    },
+    {
+        "icon": "car",
+        "name": "Información de producto",
+        "redirectTo": "/producto"
+    },
+    {
+        "icon": "book",
+        "name": "Consulta Proveedores",
+        "redirectTo": "/providers"
+    }
+
+]
