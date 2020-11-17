@@ -1,5 +1,10 @@
 <ion-header>
     <ion-toolbar>
+        <ion-buttons slot="end">
+            <ion-button color="primary" (click)="addProvider()">
+                <ion-icon size="large" name="add-circle"></ion-icon>
+            </ion-button>
+        </ion-buttons>
         <ion-title>Proveedores</ion-title>
     </ion-toolbar>
 </ion-header>
@@ -21,7 +26,10 @@
             </ion-item>
             <ion-item-options side="end">
                 <ion-item-option color="danger" (click)="removeProvider(provider.id)">
-                    <ion-icon name="trash"></ion-icon>
+                    <ion-icon size="large" name="trash"></ion-icon>
+                </ion-item-option>
+                <ion-item-option color="success" (click)="updateProvider(provider)">
+                    <ion-icon size="large" name="create"></ion-icon>
                 </ion-item-option>
             </ion-item-options>
 

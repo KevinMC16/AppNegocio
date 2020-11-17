@@ -31,6 +31,10 @@ const routes: Routes = [
     path: 'providers',
     loadChildren: () => import('./pages/providers/providers.module').then( m => m.ProvidersPageModule)
   },
+  {
+    path: 'provider-register',
+    loadChildren: () => import('./pages/provider-register/provider-register.module').then( m => m.ProviderRegisterPageModule)
+  },
 ];
 
 @NgModule({

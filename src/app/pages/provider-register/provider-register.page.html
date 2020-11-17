@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="end">
+            <ion-button color="danger" (click)="closeModal()">
+                <ion-icon size="large" name="close-circle"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title>{{isUpdate ? 'Actualizar': 'Agregar'}} Proveedor</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+    <form #f="ngForm" (submit)="onSubmit(f)">
+        <ion-item>
+            <ion-label position="floating">Nombre</ion-label>
+            <ion-input [(ngModel)]="data.name" name="name"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Dirección</ion-label>
+            <ion-input [(ngModel)]="data.address" name="address"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Teléfono</ion-label>
+            <ion-input [(ngModel)]="data.phone" name="phone"></ion-input>
+        </ion-item>
+        <ion-button type="submit" class="ion-margin-top" expand="block">{{isUpdate ? 'Actualizar': 'Guardar'}}</ion-button>
+    </form>
+</ion-content>

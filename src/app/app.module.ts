@@ -10,10 +10,11 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ProviderRegisterPage } from './pages/provider-register/provider-register.page';
 
 @NgModule({
-  declarations: [AppComponent],
-  entryComponents: [],
+  declarations: [AppComponent, ProviderRegisterPage],
+  entryComponents: [ProviderRegisterPage],
   imports: [BrowserModule, HttpClientModule, IonicModule.forRoot(), AppRoutingModule, FormsModule],
   providers: [
     StatusBar,
